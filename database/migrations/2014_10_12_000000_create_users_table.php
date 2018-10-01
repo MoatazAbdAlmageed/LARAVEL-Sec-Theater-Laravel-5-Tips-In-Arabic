@@ -18,7 +18,7 @@ class CreateUsersTable extends Migration
             $table->string('name',32);
             $table->string('username',32)->unique();
             $table->string('email')->unique();
-            $table->date('dop'); //date of birth
+            $table->date('date_of_birth');
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
