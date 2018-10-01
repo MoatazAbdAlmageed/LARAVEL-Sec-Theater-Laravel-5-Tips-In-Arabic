@@ -13,8 +13,12 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
-                    You are logged in!
+                        <b>{{ $user->name }}</b> You are logged in!
+                    <div>
+                        You joined {{$user->created_at->diffForHumans()}}
+                    </div>
+                        You are {{$user->date_of_birth->age}} years old
+                </div>
                 </div>
             </div>
         </div>
